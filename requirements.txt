@@ -1,0 +1,7 @@
+flask
+flask-cors
+anthropic
+adalflow
+supabase
+openai
+python-dotenv
