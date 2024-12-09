@@ -9,6 +9,9 @@ This repository contains a multi-agent system implemented in Python, featuring t
 │   ├── coa.py         # Course of Action Agent
 │   ├── adversary.py   # Adversary Agent
 │   └── judge.py       # Judge Agent
+│   └── eval.ipynb     # Eval Notebook for Coa Agent
+│   └── eval_data.json # Eval Dataset
+│   └── classifier.py  # Test Classifier
 ├── app.py             # Flask Application
 └── README.md
 ```
