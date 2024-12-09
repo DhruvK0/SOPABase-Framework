@@ -1,0 +1,77 @@
+[
+    {
+      "id": "1",
+      "question": "What is the role of Tactical Command and Control (TAC C2) in air operations?",
+      "answer": "TAC C2 reroutes a nearby A-10 to provide close air support while coordinating with logistics to prioritize resupply for the original flight."
+    },
+    {
+      "id": "2",
+      "question": "How is ordnance status communicated to TAC C2?",
+      "answer": "The flight lead reports \"WEAPONS YELLOW\" during check-in, and TAC C2 reassigns them to a secondary target better suited to their available ordnance."
+    },
+    {
+      "id": "3",
+      "question": "What should be done if fuel status drops below mission requirements?",
+      "answer": "TAC C2 coordinates a tanker rendezvous to refuel the fighter in-air while monitoring their fuel levels to ensure a safe return to base."
+    },
+    {
+      "id": "4",
+      "question": "What is LOWDOWN, and how is it used?",
+      "answer": "TAC C2 provides a LOWDOWN, including the SAM's grid location and range, enabling the ground unit to adjust their tactics and request SEAD (Suppression of Enemy Air Defenses)."
+    },
+    {
+      "id": "5",
+      "question": "What is the procedure for battlespace handover?",
+      "answer": "The off-going and oncoming lane commanders establish communication, with the oncoming lead stating, \"HORNET 1 HAS THE LANE,\" ensuring proper handover of responsibilities."
+    },
+    {
+      "id": "6",
+      "question": "How should ISR updates be communicated during a mission?",
+      "answer": "The ISR operator relays the grid coordinates of the convoy to TAC C2, who alerts the ground unit and reroutes their path."
+    },
+    {
+      "id": "7",
+      "question": "What is the role of WORDS in mission communication?",
+      "answer": "The pilot communicates the new WORDS code to the flight, ensuring everyone is aware of the updated threats and can adjust accordingly."
+    },
+    {
+      "id": "8",
+      "question": "What should a pilot do if they lose radar contact with a target?",
+      "answer": "The pilot reports \"NEGATIVE CONTACT,\" prompting TAC C2 to provide updated targeting data using other available assets."
+    },
+    {
+      "id": "9",
+      "question": "What actions are required when an aircraft experiences an in-flight emergency?",
+      "answer": "The pilot declares an emergency, and TAC C2 notifies the recovery base to prepare for a belly landing while coordinating airspace clearance for the aircraft."
+    },
+    {
+      "id": "10",
+      "question": "How is the ALPHA CHECK used in training scenarios?",
+      "answer": "The flight requests an ALPHA CHECK from TAC C2, confirming their location relative to the BULLSEYE, and recalibrates their systems."
+    },
+    {
+      "id": "11",
+      "question": "What happens when Link 16 fidelity checks fail?",
+      "answer": "The flight reports \"TIMBER SOUR,\" and TAC C2 instructs them to rely on voice communication until the issue is resolved."
+    },
+    {
+      "id": "12",
+      "question": "How are surface threats communicated to air assets?",
+      "answer": "The unit relays an approximate location using the military grid reference system (MGRS) to TAC C2, which passes the information to nearby fighters as a potential threat."
+    },
+    {
+      "id": "13",
+      "question": "What should be done when enemy aircraft are \"MANEUVERING\"?",
+      "answer": "The controller updates the PICTURE call with \"MANEUVER HOT,\" alerting the fighters to adjust their intercept approach."
+    },
+    {
+      "id": "14",
+      "question": "What is the procedure for a timing adjustment (ROLEX)?",
+      "answer": "TAC C2 announces \"ROLEX 10,\" ensuring all mission participants synchronize their operations to the new timeline."
+    },
+    {
+      "id": "15",
+      "question": "How are changes in weather communicated during operations?",
+      "answer": "TAC C2 updates all mission participants with current weather conditions and redirects assets to safer routes."
+    }
+  ]
