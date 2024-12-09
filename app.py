@@ -54,16 +54,6 @@ def get_coa_options(text):
     
     return [item["content"] for item in response.data[:-1]]
 
-# def coa_agent(query, model_client: ModelClient, model_kwargs):
-#     """Generate course of action using the agent."""
-#     generator = Generator(
-#         model_client=model_client,
-#         model_kwargs=model_kwargs,
-#     )
-    
-#     llm_response = generator.call(prompt_kwargs={"input_str": query})
-#     return llm_response.data
-
 def coa_agent(message, past_red_action, past_verdict, model_client: ModelClient, model_kwargs):
     """Generate course of action using the agent"""
     react = ReActAgent(
@@ -167,44 +157,6 @@ def chat():
         
         if not message:
             return jsonify({'error': 'No message provided'}), 400
-
-        # Get COA options
-        # coa_options = get_coa_options(message)
-        
-        # Create the COA query
-        # if past_red_action and past_verdict:
-        #     coa_query = f"""
-        #     You are a United States military general. Given these potentially relevant SOP guidelines, 
-        #     create a course of action plan to deal with the situation. 
-        #     The output should be concise.
-        #     Make sure every item in this list follows logical sequential steps and delgate roles to your forces.
-        #     {coa_options}
-        #     Note that in the last simulated response, this was the result: {past_verdict},
-        #     based on the adversary response {past_red_action}
-        #     Take this into account when constructing your plan
-        #     The output MUST be in a ####-separated list format. Do not number the output, and keep everything on the same line 
-        #     Keep your response to five actions or less, and make sure these actions represent the most impactful of the possible choices
-        #     Do not include parantheses or brackets. For example, DEFENDING [direction] becomes Defending direction.
-        #     Turn all uppercase names to capitlalized, unless a specific acronym. For instance, DEPLOY becomes Deploy or deploy (depending on position), while CIA stays CIA.
-        #     Ultimately, make sure your generated guidelines are relevant to the message: {message}
-        #     Example output:
-        #     action 1####action 2####action 3
-        #     """
-        # else:
-        #     coa_query = f"""
-        #     You are a United States military general. Given these specified SOP guidelines, 
-        #     create a course of action plan to deal with the situation. 
-        #     The output should be concise and in numbered five bulletpoints or less.
-        #     Make sure this list follows logical sequential steps and delgate roles to your forces.
-            
-        #     {coa_options}
-
-        #     The output MUST be in a ####-separated list format. Do not number the output, and keep everything on the same line
-        #     Keep your response to five actions or less, and make sure these actions represent the most impactful of the choices. 
-        #     Example output:
-        #     Do not include parantheses or brackets. For example, DEFENDING [direction] becomes DEFENDING direction
-        #     action 1####action 2####action 3
-        #     """
 
         coa_response = coa_agent(message, past_red_action, past_verdict, ModelClientType.ANTHROPIC(), claude_model_kwargs)
 
