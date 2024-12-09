@@ -2,6 +2,12 @@
 
 This repository contains a multi-agent system implemented in Python, featuring three distinct agents that interact through a Flask web application. The system simulates strategic decision-making scenarios where defense agents compete and are evaluated by a judge.
 
+## Demo Video
+
+[![Watch the demo video](https://github.com/DhruvK0/SOPABase-Framework/blob/main/sopabase_thumbail.png)](https://www.loom.com/share/caca6a12f56d48d9991d2c332f17a907?sid=279521fb-afe1-4505-82ec-254f20e3781f)
+
+*Click the image above to watch the demo video*
+
 ## Project Structure
 
 ```
@@ -13,6 +19,7 @@ This repository contains a multi-agent system implemented in Python, featuring t
 │   └── eval_data.json # Eval Dataset
 │   └── classifier.py  # Test Classifier
 ├── app.py             # Flask Application
+├── requirements.txt   
 └── README.md
 ```
 
